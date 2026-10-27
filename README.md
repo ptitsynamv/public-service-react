@@ -1,156 +1,247 @@
-<img src="https://raw.githubusercontent.com/react-boilerplate/react-boilerplate-brand/master/assets/banner-metal-optimized.jpg" alt="react boilerplate banner" align="center" />
+# Public Service React
 
-<br />
+[![React](https://img.shields.io/badge/React-16.6-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
+[![Redux](https://img.shields.io/badge/Redux-4.0-764ABC?logo=redux&logoColor=white)](https://redux.js.org/)
+[![Redux-Saga](https://img.shields.io/badge/Redux--Saga-0.16-999999?logo=reduxsaga&logoColor=white)](https://redux-saga.js.org/)
+[![Express](https://img.shields.io/badge/Express-4.16-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose%205-47A248?logo=mongodb&logoColor=white)](https://mongoosejs.com/)
+[![Webpack](https://img.shields.io/badge/Webpack-4-8DD6F9?logo=webpack&logoColor=black)](https://webpack.js.org/)
+[![Node](https://img.shields.io/badge/Node-8.x%20(lts%2Fcarbon)-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/com/ptitsynamv/public-service-react/master?logo=travis)](https://app.travis-ci.com/github/ptitsynamv/public-service-react)
 
-<div align="center"><strong>Start your next react project in seconds</strong></div>
-<div align="center">A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices</div>
+A full-stack web app for checking household utility data. You log in and view your water meter readings (cold and hot water, kitchen and bathroom). Each reading set is keyed by a Telegram `chatId`, so it can pair with a Telegram bot.
 
-<br />
+The frontend is built on [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate) 3.7. The Express + MongoDB REST API runs in the same Node process.
 
-<div align="center">
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/react-boilerplate/react-boilerplate">
-    <img src="https://david-dm.org/react-boilerplate/react-boilerplate.svg" alt="Dependency Status" />
-  </a>
-  <!-- devDependency Status -->
-  <a href="https://david-dm.org/react-boilerplate/react-boilerplate#info=devDependencies">
-    <img src="https://david-dm.org/react-boilerplate/react-boilerplate/dev-status.svg" alt="devDependency Status" />
-  </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/react-boilerplate/react-boilerplate">
-    <img src="https://travis-ci.org/react-boilerplate/react-boilerplate.svg" alt="Build Status" />
-  </a>
-  <!-- Test Coverage -->
-  <a href="https://coveralls.io/r/react-boilerplate/react-boilerplate">
-    <img src="https://coveralls.io/repos/github/react-boilerplate/react-boilerplate/badge.svg" alt="Test Coverage" />
-  </a>
-  <a href="https://spectrum.chat/react-boilerplate">
-  <img alt="Chat with us on Spectrum" src="https://withspectrum.github.io/badge/badge.svg" />
-</a>
-
-</div>
-<div align="center">
-    <!-- Backers -->
-  <a href="#backers">
-    <img src="https://opencollective.com/react-boilerplate/backers/badge.svg" alt="Backers" />
-  </a>
-      <!-- Sponsors -->
-  <a href="#sponsors">
-    <img src="https://opencollective.com/react-boilerplate/sponsors/badge.svg" alt="Sponsors" />
-  </a>
-  <a href="http://thinkmill.com.au/?utm_source=github&utm_medium=badge&utm_campaign=react-boilerplate">
-    <img alt="Supported by Thinkmill" src="https://thinkmill.github.io/badge/heart.svg" />
-  </a>
-</div>
-
-<br />
-
-<div align="center">
-  <sub>Created by <a href="https://twitter.com/mxstbr">Max Stoiber</a> and maintained with ❤️ by an amazing <a href="https://github.com/orgs/react-boilerplate/teams/core">team of developers</a>.</sub>
-</div>
-
-## Features
-
-<dl>
-  <dt>Quick scaffolding</dt>
-  <dd>Create components, containers, routes, selectors and sagas - and their tests - right from the CLI!</dd>
-
-  <dt>Instant feedback</dt>
-  <dd>Enjoy the best DX (Developer eXperience) and code your app at the speed of thought! Your saved changes to the CSS and JS are reflected instantaneously without refreshing the page. Preserve application state even when you update something in the underlying code!</dd>
-
-  <dt>Predictable state management</dt>
-  <dd>Unidirectional data flow allows for change logging and time travel debugging.</dd>
-
-  <dt>Next generation JavaScript</dt>
-  <dd>Use template strings, object destructuring, arrow functions, JSX syntax and more.</dd>
-
-  <dt>Next generation CSS</dt>
-  <dd>Write composable CSS that's co-located with your components for complete modularity. Unique generated class names keep the specificity low while eliminating style clashes. Ship only the styles that are on the page for the best performance.</dd>
-
-  <dt>Industry-standard routing</dt>
-  <dd>It's natural to want to add pages (e.g. `/about`) to your application, and routing makes this possible.</dd>
-
-  <dt>Industry-standard i18n internationalization support</dt>
-  <dd>Scalable apps need to support multiple languages, easily add and support multiple languages with `react-intl`.</dd>
-
-  <dt>Offline-first</dt>
-  <dd>The next frontier in performant web apps: availability without a network connection from the instant your users load the app.</dd>
-
-  <dt>Static code analysis</dt>
-  <dd>Focus on writing new features without worrying about formatting or code quality. With the right editor setup, your code will automatically be formatted and linted as you work.</dd>
-
-  <dt>SEO</dt>
-  <dd>We support SEO (document head tags management) for search engines that support indexing of JavaScript content. (eg. Google)</dd>
-</dl>
-
-But wait... there's more!
-
-- _The best test setup:_ Automatically guarantee code quality and non-breaking
-  changes. (Seen a react app with 100% test coverage before?)
-- _Native web app:_ Your app's new home? The home screen of your users' phones.
-- _The fastest fonts:_ Say goodbye to vacant text.
-- _Stay fast_: Profile your app's performance from the comfort of your command
-  line!
-- _Catch problems:_ AppVeyor and TravisCI setups included by default, so your
-  tests get run automatically on Windows and Unix.
-
-There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on how to structure your React.js apps with scalability in mind. It provides rationale for the majority of boilerplate's design decisions.
-
-<sub><i>Keywords: React.js, Redux, Hot Reloading, ESNext, Babel, react-router, Offline First, ServiceWorker, `styled-components`, redux-saga, FontFaceObserver</i></sub>
-
-## Quick start
-
-1.  Make sure that you have Node.js v8.10 and npm v5 or above installed.
-2.  Clone this repo using `git clone --depth=1 https://github.com/react-boilerplate/react-boilerplate.git <YOUR_PROJECT_NAME>`
-3.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.<br />
-4.  Run `npm run setup` in order to install dependencies and clean the git repo.<br />
-    _At this point you can run `npm start` to see the example app at `http://localhost:3000`._
-5.  Run `npm run clean` to delete the example app.
-
-Now you're ready to rumble!
-
-> Please note that this boilerplate is **production-ready and not meant for beginners**! If you're just starting out with react or redux, please refer to https://github.com/petehunt/react-howto instead. If you want a solid, battle-tested base to build your next product upon and have some experience with react, this is the perfect start for you.
-
-## Documentation
-
-- [**The Hitchhikers Guide to `react-boilerplate`**](docs/general/introduction.md): An introduction for newcomers to this boilerplate.
-- [Overview](docs/general): A short overview of the included tools
-- [**Commands**](docs/general/commands.md): Getting the most out of this boilerplate
-- [Testing](docs/testing): How to work with the built-in test harness
-- [Styling](docs/css): How to work with the CSS tooling
-- [Your app](docs/js): Supercharging your app with Routing, Redux, simple
-  asynchronicity helpers, etc.
-- [**Troubleshooting**](docs/general/gotchas.md): Solutions to common problems faced by developers.
-
-## Supporters
-
-This project would not be possible without the support by these amazing folks. [**Become a sponsor**](https://opencollective.com/react-boilerplate) to get your company in front of thousands of engaged react developers and help us out!
-
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/0/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/1/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/2/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/3/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/4/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/5/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/6/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/7/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/8/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/9/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/9/avatar.svg"></a>
+> **Status:** early work in progress. Some boilerplate demo pages, such as the GitHub repos list on the home page, are still in the app.
 
 ---
 
-<a href="https://opencollective.com/react-boilerplate/backer/0/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/0/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/1/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/1/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/2/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/2/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/3/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/3/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/4/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/4/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/5/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/5/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/6/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/6/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/7/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/7/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/8/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/8/avatar.svg"></a>
-<a href="https://opencollective.com/react-boilerplate/backer/9/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/9/avatar.svg"></a>
+## Features
+
+- **JWT authentication:** email and password login, with Passport-JWT protecting the API routes. Logging in with an email that isn't registered yet creates the account automatically.
+- **Water meter readings:** shows cold and hot water readings for the kitchen and bathroom, stored per Telegram `chatId` in MongoDB.
+- **Single-process full stack:** one Express server serves both the React app and the `/api` endpoints.
+- **Predictable state:** Redux with Immutable.js, side effects in redux-saga, and memoized selectors from reselect.
+- **Code splitting:** pages load lazily through `loadable-components`, and their reducers and sagas are injected when the page mounts.
+- **Developer experience:** hot module reloading in development, plop generators for new components and containers, ESLint + Prettier, and a pre-commit lint hook.
+- **i18n-ready:** react-intl with English and German translation catalogs.
+
+## Tech stack
+
+| Layer    | Technologies                                                                               |
+| -------- | ------------------------------------------------------------------------------------------ |
+| Frontend | React 16, React Router 4, Redux, redux-saga, Immutable.js, reselect, styled-components, react-intl |
+| Backend  | Node.js, Express 4, Mongoose 5, Passport + passport-jwt, jsonwebtoken, bcryptjs            |
+| Tooling  | Webpack 4, Babel 7, Jest 23 + Enzyme, ESLint (Airbnb) + Prettier, plop                     |
+
+---
+
+## Prerequisites
+
+| Requirement | Version                     | Notes                                                       |
+| ----------- | --------------------------- | ----------------------------------------------------------- |
+| Node.js     | **8.x** (`lts/carbon`)      | Pinned in [.nvmrc](.nvmrc). Node 10 usually works too.      |
+| npm         | **≥ 5**                     | Checked by a `preinstall` script.                           |
+| MongoDB     | 3.6+ (local or Atlas)       | Needed for login and meter data.                            |
+| Git         | any                         |                                                             |
+
+### ⚠️ Legacy Node compatibility
+
+This project uses a 2018 toolchain: webpack 4, Babel 7.1, Jest 23 and native image-optimization binaries. **It will not build on current Node releases.** On Node 17 and later, webpack 4 fails with `ERR_OSSL_EVP_UNSUPPORTED`, and some native dependencies fail to install. Use a Node version manager to switch to the pinned version:
+
+**macOS / Linux ([nvm](https://github.com/nvm-sh/nvm)):**
+
+```bash
+nvm install    # reads .nvmrc -> lts/carbon (Node 8)
+nvm use
+```
+
+**Windows ([nvm-windows](https://github.com/coreybutler/nvm-windows)):** this tool doesn't read `.nvmrc`, so give it the version explicitly.
+
+```bash
+nvm install 8.17.0
+nvm use 8.17.0
+```
+
+If you have to stay on a newer Node, you can work around the OpenSSL error with `NODE_OPTIONS=--openssl-legacy-provider`. This setup is not supported, though.
+
+---
+
+## Getting started
+
+### 1. Clone and install
+
+```bash
+git clone https://github.com/ptitsynamv/public-service-react.git
+cd public-service-react
+nvm use              # or: nvm use 8.17.0 on Windows
+npm install
+```
+
+### 2. Configure the server
+
+The development config file is git-ignored, so you need to create it yourself. **Without it, `npm start` crashes on startup.**
+
+Create `server/config/keys.dev.js`:
+
+```js
+module.exports = {
+  mongoUrl: 'mongodb://localhost:27017/public-service',
+  jwt: 'replace-with-a-long-random-secret',
+};
+```
+
+In production (`NODE_ENV=production`), the server reads [server/config/keys.prod.js](server/config/keys.prod.js) instead, which takes its values from environment variables:
+
+| Variable    | Purpose                                                    |
+| ----------- | ---------------------------------------------------------- |
+| `MONDO_URI` | MongoDB connection string (the name is spelled like this in the code) |
+| `JWT`       | Secret used to sign and verify JWTs                        |
+| `PORT`      | HTTP port (default `3000`)                                 |
+| `HOST`      | Bind host (optional)                                       |
+
+### 3. Start MongoDB
+
+Use a local `mongod`, Docker, or an Atlas cluster. With Docker:
+
+```bash
+docker run -d --name public-service-mongo -p 27017:27017 mongo:4.4
+```
+
+### 4. Run the app
+
+```bash
+npm start
+```
+
+Open **http://localhost:3000**. The webpack dev middleware compiles the frontend in memory and enables hot reloading.
+
+### 5. (Optional) Seed meter data
+
+The app has no endpoint for creating meter readings yet, so add a document manually. The `chatId` must match the one the client sends, which is currently hard-coded in [app/containers/MenuPage/saga.js](app/containers/MenuPage/saga.js):
+
+```js
+// mongosh mongodb://localhost:27017/public-service
+db.waterServiceMeters.insertOne({
+  chatId: 280601079,
+  coldWaterKitchen: '00123',
+  coldWaterBathroom: '00456',
+  hotWaterKitchen: '00078',
+  hotWaterBathroom: '00090',
+});
+```
+
+Then go to `/login`, sign in with any email and password (the account is created on first login), and click the water-meter button on `/menu`.
+
+---
+
+## Available scripts
+
+| Command                    | Description                                                          |
+| -------------------------- | -------------------------------------------------------------------- |
+| `npm start`                | Dev server with hot reloading (`--port <n>` to change the port)       |
+| `npm run start:tunnel`     | Dev server exposed through an ngrok tunnel                           |
+| `npm run build`            | Production build into `build/`                                       |
+| `npm run start:prod`       | Serve the production build (`NODE_ENV=production`)                   |
+| `npm run start:production` | Test, build, and serve in one step                                   |
+| `npm run lint`             | ESLint over the whole project                                        |
+| `npm run lint:eslint:fix`  | ESLint with autofix                                                  |
+| `npm test`                 | Lint, then Jest with coverage                                        |
+| `npm run test:watch`       | Jest in watch mode                                                   |
+| `npm run generate`         | Scaffold a component, container, or language                         |
+| `npm run extract-intl`     | Extract react-intl messages into `app/translations/`                 |
+| `npm run analyze`          | Webpack bundle analysis                                              |
+
+To run a single test file without the lint step and coverage threshold:
+
+```bash
+npx cross-env NODE_ENV=test jest app/containers/HomePage/tests/saga.test.js
+```
+
+> ⚠️ Avoid `npm run clean`. It resets `app/` to an empty boilerplate and **deletes the project's custom pages**.
+
+---
+
+## API reference
+
+All endpoints accept and return JSON.
+
+| Method | Endpoint                     | Auth            | Body                    | Response                               |
+| ------ | ---------------------------- | --------------- | ----------------------- | -------------------------------------- |
+| POST   | `/api/auth/login`            | –               | `{ email, password }`   | `{ token: "Bearer <jwt>" }` (1 h TTL)  |
+| POST   | `/api/water-service-meters`  | `Authorization` | `{ chatId }`            | Meter document, or `400 Meter not found` |
+
+The `token` value already includes the `Bearer ` prefix. Send it unchanged as the `Authorization` header:
+
+```bash
+TOKEN=$(curl -s -X POST localhost:3000/api/auth/login \
+  -H 'Content-Type: application/json' \
+  -d '{"email":"me@example.com","password":"secret"}' | node -pe 'JSON.parse(require("fs").readFileSync(0)).token')
+
+curl -X POST localhost:3000/api/water-service-meters \
+  -H "Authorization: $TOKEN" -H 'Content-Type: application/json' \
+  -d '{"chatId":280601079}'
+```
+
+---
+
+## Project structure
+
+```text
+public-service-react/
+├── app/                         # React frontend (module root: imports resolve from here)
+│   ├── app.js                   # Client entry: store, router, i18n provider
+│   ├── configureStore.js        # Redux store + saga middleware
+│   ├── reducers.js              # Root reducer (global, language, login, router)
+│   ├── components/              # Presentational, stateless UI (Button, Header, Form, …)
+│   ├── containers/              # Connected pages/features
+│   │   ├── App/                 # Root layout, routes, global selectors (makeSelectToken)
+│   │   ├── LoginPage/           # Login form + auth saga -> redirects to /menu
+│   │   ├── MenuPage/            # Water-meter view + API saga
+│   │   ├── LanguageProvider/    # react-intl provider
+│   │   └── HomePage/, FeaturePage/, …  # Boilerplate demo pages
+│   ├── translations/            # i18n catalogs (en, de)
+│   └── utils/                   # injectReducer / injectSaga, request helper, history
+├── server/                      # Express backend (same process as the dev server)
+│   ├── index.js                 # Server entry: middleware, Mongo connection, API routes
+│   ├── config/                  # keys.js -> keys.dev.js (local, git-ignored) | keys.prod.js (env)
+│   ├── routes/                  # /api/auth, /api/water-service-meters
+│   ├── controllers/             # Route handlers
+│   ├── models/                  # Mongoose schemas: User, WaterServiceMeter
+│   └── middlewares/             # Passport JWT strategy, webpack dev / static prod serving
+├── internals/                   # Build tooling
+│   ├── webpack/                 # Base, dev, and prod webpack configs
+│   ├── generators/              # plop templates for `npm run generate`
+│   ├── testing/                 # Jest + Enzyme setup
+│   └── scripts/                 # analyze, extract-intl, clean, npm version check
+├── docs/                        # Upstream react-boilerplate documentation
+├── jest.config.js
+├── babel.config.js
+└── .nvmrc                       # lts/carbon (Node 8)
+```
+
+### How a request flows
+
+```text
+LoginPage ──LOGIN_REQUEST──▶ login saga ──POST /api/auth/login──▶ auth controller ──▶ MongoDB (users)
+    ◀── LOGIN_SUCCESS (token in Redux) ── redirect to /menu
+MenuPage ──WATER_SERVICE_METERS_REQUEST──▶ menu saga ──POST /api/water-service-meters (JWT)──▶ passport ──▶ MongoDB (waterServiceMeters)
+```
+
+---
+
+## Known limitations
+
+- The Telegram `chatId` is hard-coded on the client. The planned source is Telegram integration.
+- The JWT is kept only in Redux, so reloading the page logs you out.
+- The jest coverage gate (98%) fails until the custom pages and server code have tests.
+
+## Further reading
+
+The upstream boilerplate docs in [docs/](docs/) cover Redux, sagas, i18n, testing, and deployment in depth.
 
 ## License
 
-This project is licensed under the MIT license, Copyright (c) 2018 Maximilian
-Stoiber. For more information see `LICENSE.md`.
+[MIT](LICENSE.md). Based on react-boilerplate © 2018 Maximilian Stoiber.
